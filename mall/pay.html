@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结算中心</title>
+    <!-- default CSS -->
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+<header class="head_title">
+        <a href=""><img src="images/leftbtn.png" alt="" class="pre_btn"></a>
+        <h1 >结算中心</h1>
+</header>
+<section class="pay_content">
+    <div class="infor">
+        <h2>收货信息</h2>
+        <div class="card_group">
+            <div class="card_content">
+                <span><em>姓名</em><i>电话号码</i></span>
+                <span>山东省青岛市市南区太平路</span>
+            </div>
+        </div>
+        <input name="inform" type="radio" value="使用新的地址信息" />
+        <span>使用新的地址信息</span><br/>
+        <!--<input type="button" value="保存">-->
+    </div>
+    <!--<div class="way">-->
+        <!--<h2>支付方式</h2>-->
+        <!--<input name="message" type="radio" value="使用新的地址信息" />-->
+        <!--<span>在线支付</span>-->
+    <!--</div>-->
+    <!--<div class="invoice">-->
+        <!--<h2>是否开具发票</h2>-->
+        <!--<div class="check">-->
+            <!--<input name="invoice" type="radio" value="个人" />-->
+            <!--<span>个人</span>-->
+        <!--</div>-->
+        <!--<div class="list-invoice">-->
+            <!--<dl  class="border"><span>联系电话：</span><input type="text"></dl>-->
+            <!--<dl class="border"><span>详细地址：</span><input type="text"></dl>-->
+        <!--</div>-->
+        <!--<div class="check">-->
+            <!--<input name="invoice" type="radio" value="单位" />-->
+            <!--<span>单位</span>-->
+        <!--</div>-->
+        <!--<div class="list-invoice">-->
+            <!--<dt>收票人信息</dt>-->
+            <!--<dl  class="border"><span>联系电话：</span><input type="text"></dl>-->
+            <!--<dl class="border"><span>详细地址：</span><input type="text"></dl>-->
+            <!--<dt>发票信息</dt>-->
+            <!--<dl  class="border"><span>公司名称：</span><input type="text"></dl>-->
+            <!--<dl class="border"><span>公司地址：</span><input type="text"></dl>-->
+            <!--<dl  class="border"><span>纳税人识别号：</span><input type="text" class="small-input"></dl>-->
+            <!--<dl class="border"><span>开户行及地址：</span><input type="text" class="small-input"></dl>-->
+        <!--</div>-->
+        <!--<span class="tip">注：如由用户提供的开票信息有误，造成发票作废，不得重开</span>-->
+    <!--</div>-->
+    <div class="pay_list">
+        <h2>商品清单</h2>
+        <div class="list">
+            <a href="">
+                <img src="images/img4.png" alt="">
+            </a>
+            <div>
+                <a href="">
+                    <h4> ZESPRI/佳沛 阳光金奇异果 16个/箱 1.3kg以上 新西兰</h4>
+                </a>
+                <span>￥99.00</span>
+                <em>数量:<span> 1</span></em>
+            </div>
+        </div>
+        <div class="list">
+            <a href="">
+                <img src="images/img4.png" alt="">
+            </a>
+            <div>
+                <a href="">
+                    <h4> ZESPRI/佳沛 阳光金奇异果 16个/箱 1.3kg以上 新西兰</h4>
+                </a>
+                <span>￥99.00</span>
+                <em>数量:<span> 1</span></em>
+            </div>
+        </div>
+        <em>运费：￥0</em>
+        <br/>
+        <span style="padding-left: 0;">合计：￥198.00</span>
+        <a href="" class="submit">提交订单</a>
+    </div>
+</section>
+<footer>
+    <div class="menu">
+        <div><a href="">首页</a></div>
+        <div><a href="">分类</a></div>
+        <div><a href="">购物车</a><span>1</span></div>
+        <div><a href="">我的</a></div>
+    </div>
+</footer>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    //    basic
+    var html =document.documentElement;
+    html.style.fontSize = html.clientWidth / 15+'px';
+//    document.addEventListener('touchstart',function(ev){ev.preventDefault});
+
+
+//    购物车
+//    减
+    $('.sub').click(function(){
+        var txt=$(this).siblings('.txt');
+        var a=txt.attr('value');
+//        alert(txt.attr('value'));
+        if(a>1){
+            a--;
+            txt.attr('value',a);
+        }else{
+            txt.attr('value',1);
+        }
+    });
+//    增
+    $('.add').click(function(){
+        var txt=$(this).siblings('.txt');
+        var a=txt.attr('value');
+        a++;
+        txt.attr('value',a);
+    });
+//    删
+    $('.del').click(function(){
+        $(this).parents(".list").css('display','none');
+    });
+
+</script>
+</body>
+</html>

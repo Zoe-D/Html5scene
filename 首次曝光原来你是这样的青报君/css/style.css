@@ -1,0 +1,93 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+video {
+  object-position: 0px 0px;
+  width: 100%;
+  
+}
+#videoBox {
+  position: relative;
+  width: 20rem;
+  height: 100%;
+  z-index: -1;
+}
+#playBtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  z-index: 1000;
+  background: url(../images/bg.png) no-repeat top left;
+  background-size: 20rem 100%;
+  width: 20rem;
+}
+#playBtn #re {
+  position: relative;
+}
+#playBtn .dw {
+  position: absolute;
+  left: 1.3125rem;
+  top: 4.9375rem;
+  width: 5.4375rem;
+}
+#playBtn .tg {
+  position: absolute;
+  left: 14.28125rem;
+  top: 3.34375rem;
+  width: 3.90625rem;
+  opacity: 0;
+}
+#playBtn .people {
+  position: absolute;
+  left: 3.3125rem;
+ 	top: 11rem;
+  width: 15.6875rem;
+}
+#playBtn .line {
+  position: absolute;
+  left: 3.59375rem;
+  top: 5.03125rem;
+  width: 14.15625rem;
+}
+#playBtn .scbg {
+  position: absolute;
+  left: 4.21875rem;
+  top: 6.53125rem;
+  width: 11.40625rem;
+}
+#playBtn .yln {
+  position: absolute;
+  left: 6.125rem;
+  top: 9.4375rem;
+  width: 1.28125rem;
+}
+#playBtn .szyd {
+  position: absolute;
+  left: 7.75rem;
+  top: 9.4375rem;
+  width: 5.9375rem;
+}
+#playBtn .qbj {
+  position: absolute;
+  left: 7.75rem;
+  top: 11.09375rem;
+  width: 5.875rem;
+}
+#wechat{
+	position: absolute;
+	width: 20rem;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  background: #fff;
+  z-index: 888;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1rem;
+}

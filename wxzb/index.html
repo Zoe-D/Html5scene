@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首次曝光！原来你是这样的青报君……</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="videoBox">
+    <video id="videoLive" preload="auto" poster=""  x5-video-player-type="h5" x5-video-player-fullscreen="true" webkit-playsinline="true" x-webkit-airplay="true" playsinline="true">
+        <source src="myvideo.mp4">
+    </video>
+</div>
+<div id="wechat">
+	<p style="text-align: center;">请使用微信浏览器打开</p>
+</div>
+<div id="playBtn">
+	<div id="re">
+		<img src="images/ta.png" alt="" class="dw" id="dw"/>
+		<img src="images/tg.png" alt="" class="tg"/>
+		<img src="images/line.png" alt="" class="line"/>
+		<img src="images/people.png" alt="" class="people"/>
+		<img src="images/scbg.png" alt="" class="scbg"/>
+		<img src="images/yln.png" alt="" class="yln"/>
+		<img src="images/szyd.png" alt="" class="szyd"/>
+		<img src="images/qbj.png" alt="" class="qbj"/>
+	</div>
+</div>
+
+<script src="js/iscroll.js"></script>
+<script>
+	//    basic
+    var html =document.documentElement;
+    html.style.fontSize = html.clientWidth / 20+'px';
+    document.addEventListener('touchstart',function(ev){ev.preventDefault});
+    
+    var iWindowWidth;
+    var iWindowHeight;
+    var iswechart = document.getElementById("wechat");
+    //获取videojs生成的video
+    var myPlayer = document.getElementById("videoLive");
+    //播放按钮
+    var oPlayBtn = document.getElementById("playBtn");
+    //获取视频盒子
+    var oVideoBox = document.getElementById("videoBox");
+    var oRe = document.getElementById("re");
+  
+
+    //图片加载完
+//  oPoster.onload = function () {
+//      oVideoBox.style.height = oPoster.offsetHeight + "px";
+//  }
+
+    window.addEventListener('touchmove', function (e) {
+     e.preventDefault();
+     }, false);
+     oPlayBtn.style.height = screen.height+'px'
+     oRe.style.height = screen.height+'px'
+//  function autoWH() {
+//      //获取可视区宽度
+//      iWindowWidth = window.innerWidth;
+//      //获取可视区高度
+//      iWindowHeight = screen.height+'px';
+//     
+//  }
+//  autoWH();
+
+    //播放按钮呗点击
+    oPlayBtn.onclick = function () {
+        myPlayer.play();
+        this.style.display  = "none";
+       
+    }
+//判断是不是微信
+var isWeixin = (/MicroMessenger/ig).test(navigator.userAgent);
+var isQQ = (/qq/ig).test(navigator.userAgent);
+   if(!isWeixin && !isQQ){
+   	iswechart.style.display='block';
+   	oPlayBtn.style.display = 'none';
+   	oVideoBox.style.display = 'none';
+   	
+}else
+{
+	iswechart.style.display='none';
+}
+//</script>
+<script src="js/TweenMax.min.js"></script>
+<script>
+	var t = new TimelineMax();
+	t.set(".scbg",{transformPerspective:300,transformOrigin:"left"})
+			
+			t.fromTo("#dw",0.3,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+			})
+			.fromTo(".line",0.3,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,
+				delay:'-0.5s',
+				
+			})
+			.fromTo(".scbg",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,
+				delay:'-0.5s',
+				
+			})
+			.fromTo(".yln",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,
+				
+			})
+			.fromTo(".szyd",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,			
+			},'-=0.8')
+			.fromTo(".qbj",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,
+				
+			},'-=0.8')
+			.fromTo(".people",0.6,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+				scale:3,
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				scale:1,
+				ease:Power0.easeNone,
+			})
+			.fromTo(".tg",1.2,
+			{	x : '1.3125rem',
+				scale:1,
+				y:'4.9375rem',
+				 repeat: 100,
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				scale:1,
+				repeat: 100,
+			})
+</script>
+<!--微信分享-->
+<script type="text/javascript" src="http://pic.dailyqd.com/uploadfiles/jnlogin/jnshare/jnclientshare.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+
+var curUrl=window.location.href;
+var sign="";
+var time="";
+ $.ajax({
+ type: 'get',
+ url: 'http://tool.dailyqd.com/maker/mobilesharejninterface.aspx',
+ data:
+ {
+ 'url': curUrl
+ },
+ dataType: 'jsonp',
+ jsonp: "callback",
+ jsonpCallback: "qdrbjnshare",
+ success: function (data) {
+ 	 wx.config({
+ debug: false, 
+ appId: "wxab5dbb4806762bfc", 
+ timestamp: data.time, 
+ nonceStr: data.noncstr, 
+ signature: data.sign,
+ jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone'] // 功能列表，我们要使用JS-SDK的什么功能
+
+}); 
+ },
+ error: function (XMLHttpRequest, textStatus, errorThrown) {
+ }
+ })
+	
+
+wx.error(function(res){
+});
+ wx.ready(function(){
+ // 获取“分享给朋友”按钮点击状态及自定义分享内容接口
+wx.onMenuShareAppMessage({
+ title: '首次曝光！原来你是这样的青报君……', // 分享标题
+ desc: '青岛观上出现了这样一条稿子，评论火了！', // 分享描述
+ 
+ link: document.URL, // 分享链接
+ imgUrl: 'http://www.dailyqd.com/h5/scbg/images/1.png', // 分享图标
+ type: '', // 分享类型,music、video或link，不填默认为link
+ dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+		 
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+		
+ }
+});
+wx.onMenuShareTimeline({
+ title: ' 首次曝光！原来你是这样的青报君……', // 分享标题
+ link: document.URL, // 分享链接
+ desc: '青岛观上出现了这样一条稿子，评论火了！', // 分享描述
+ imgUrl: 'http://www.dailyqd.com/h5/scbg/images/1.png', // 分享图标
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+ 	 
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+ 	
+ }
+});
+wx.onMenuShareQQ({
+ title: '首次曝光！原来你是这样的青报君…… ', // 分享标题
+ desc: '青岛观上出现了这样一条稿子，评论火了！',
+ link: document.URL, // 分享链接
+ imgUrl: 'http://www.dailyqd.com/h5/scbg/images/1.png', // 分享图标
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+ 	
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+ 	
+ }
+});
+wx.onMenuShareWeibo({
+	 title: ' 首次曝光！原来你是这样的青报君……', // 分享标题
+ desc: '青岛观上出现了这样一条稿子，评论火了！',
+ link: document.URL, // 分享链接
+ imgUrl: 'http://www.dailyqd.com/h5/scbg/images/1.png', // 分享图标
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+ 	 
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+ 	
+ }
+});
+wx.onMenuShareQZone({
+	 title: ' 首次曝光！原来你是这样的青报君…… ', // 分享标题
+ desc:'青岛观上出现了这样一条稿子，评论火了！',
+ link: document.URL, // 分享链接
+ imgUrl: 'http://www.dailyqd.com/h5/scbg/images/1.png', // 分享图标
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+ 	 
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+ 	
+ }
+});
+}); 
+
+
+//$(document).attr('title','<s:property value="tdailyManuscript.subtitle" escape="false" />');
+//document.title='<s:property value="tdailyManuscript.subtitle" escape="false" />';
+</script>
+
+</body>
+</html>

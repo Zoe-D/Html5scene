@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>艺术青岛</title>
+    <script>
+        //获取html
+        var html = document.documentElement;
+        //设置字体大小 = 可视区宽度 / 15
+        html.style.fontSize = html.clientWidth / 15 + 'px';
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+</head>
+<body>
+<!--head-->
+<header class="head">
+    <span class="menu" id="menu"></span>
+    <a href=""><img src="images/logo.png" alt=""></a>
+    <span class="lang">
+        <a href="">中文</a>
+        <a href="">EN</a>
+    </span>
+</header>
+<!--menu-->
+<div class="nav">
+    <div>
+        <h3>艺术青岛</h3>
+            <a href="">艺术青岛介绍</a>
+            <a href="">往届回顾</a>
+    </div>
+    <div >
+        <h3>参展机构</h3>
+            <a href="">参展申请</a>
+            <a href="">运输指南</a>
+            <a href="">酒店住宿</a>
+            <a href="">下载中心</a>
+    </div>
+    <div >
+        <h3>参观服务</h3>
+            <a href="">参观指南</a>
+    </div>
+    <div>
+        <h3>媒体中心</h3>
+            <a href="">最新消息</a>
+            <a href="">媒体合作</a>
+            <a href="">下载中心</a>
+    </div>
+    <div>
+        <h3>合作伙伴</h3>
+            <a href="">合作机构</a>
+            <a href="">合作艺术家</a>
+    </div>
+    <div>
+        <h3>联系我们</h3>
+            <a href="">关于我们</a>
+            <a href="">联系我们</a>
+            <a href="">招商合作</a>
+    </div>
+</div>
+<!--content-->
+<sectoin class="content">
+    <ul class="list list2">
+        <li>
+            <h4><a href="" target="_blank">米巧铭</a></h4>
+            <a href="" target="_blank"><img src="images/img.png" alt=""></a>
+        </li>
+
+        <li>
+            <h4><a href="" target="_blank">陈剑锋</a></h4>
+            <a href="" target="_blank"><img src="images/img.png" alt=""></a>
+        </li>
+
+        <li>
+            <h4><a href="" target="_blank">曹继才</a></h4>
+            <a href="" target="_blank"><img src="images/img.png" alt=""></a>
+        </li>
+
+        <li>
+            <h4><a href="" target="_blank">张加</a></h4>
+            <a href="" target="_blank"><img src="images/img.png" alt=""></a>
+        </li>
+
+        <li>
+            <h4><a href="" target="_blank">吴悠</a></h4>
+            <a href="" target="_blank"><img src="images/img.png" alt=""></a>
+        </li>
+
+        <li>
+            <h4><a href="" target="_blank">刘力国</a></h4>
+            <a href="" target="_blank"><img src="images/img.png" alt=""></a>
+        </li>
+
+    </ul>
+    <!--footer-->
+    <footer class="footer1">
+        <p>Copyright © 2017 artqingdao.com.cn<br/>
+            工信部备案：鲁ICP备12013509号公安部备案：37020020140021</p>
+    </footer>
+</sectoin>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    var num=0,sub=0;
+    $('.menu').on('touchend',end);
+    $('.nav').find('h3').on('touchend',pushmenu);
+    function end(){
+        if(num==0){
+            $('.nav').fadeIn();
+            num=1
+        }else{
+            $('.nav').fadeOut();
+            num=0;
+        }
+    }
+    function pushmenu() {
+
+            $(this).siblings('p').animate({height: 'toggle', opacity: 'toggle'}, "slow");
+            $(this).css('background','#f1f1f1 url("images/bgd.png") no-repeat 95% center');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body,
+body * {
+  -webkit-text-size-adjust: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: Helvetica;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+strong {
+  font-weight: normal;
+}
+a,
+input[type=button],
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+}
+textarea {
+  border-radius: 0.2rem;
+}
+a {
+  text-decoration: none;
+}
+.wrap {
+  background: url("../img/bg.png") no-repeat;
+  background-size: cover;
+  width: 15rem;
+  height: 100%;
+  padding: 1rem 0;
+}
+.wrap input,
+.wrap textarea,
+.wrap select {
+  width: 10.6rem;
+  display: inline-block;
+  margin-left: 2rem;
+  border-radius: 0;
+  margin-bottom: 0.4rem;
+  font-size: 0.6rem;
+  padding-left: 0.4rem;
+  outline: none;
+}
+.wrap div span {
+  color: #c10505;
+  line-height: 1.4rem;
+  display: inline;
+  margin-left: 0;
+}
+.wrap input,
+.wrap select {
+  height: 1.4rem;
+  line-height: 1.4rem;
+}
+.wrap input {
+  margin-right: 0.2rem;
+}
+.wrap textarea {
+  border-radius: 0.2rem;
+  height: 3.2rem;
+  width: 10.6rem;
+  padding: 0.4rem;
+}
+.wrap span {
+  font-size: 0.4rem;
+  display: inline-block;
+  margin-left: 2rem;
+  color: #ffffff;
+}
+.wrap select {
+  width: 11.4rem;
+}
+.wrap div span {
+  font-size: 0.6rem;
+}
+.wrap .alert {
+  display: block;
+  margin-top: -0.4rem;
+  margin-left: 2rem;
+  color: #ffffff;
+}
+.wrap .submit{
+  width: 8rem;
+  height:1.6rem;
+  background: #35c3a5;
+  font:1rem/1.5rem '微软雅黑';
+  font-weight: bold;
+  margin:0 auto;
+  text-align: center;
+}
+.wrap .submit span{color: #fff;}

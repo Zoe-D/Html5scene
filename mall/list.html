@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <!-- default CSS -->
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+<header class="head_title">
+        <a href=""><img src="images/leftbtn.png" alt="" class="pre_btn"></a>
+        <h1>商品列表</h1>
+</header>
+<div class="list_new" >
+    <div class="list">
+        <a href="">
+            <img src="images/img1.png" alt="">
+            <div>
+                <h4> ZESPRI/佳沛 阳光金奇异果 16个/箱 1.3kg以上 新西兰</h4>
+                <span><em>￥</em>99.00</span>
+                <em>好评 100%</em>
+            </div>
+        </a>
+    </div>
+    <div class="list">
+        <a href="">
+            <img src="images/img1.png" alt="">
+            <div>
+                <h4> ZESPRI/佳沛 阳光金奇异果 16个/箱 1.3kg以上 新西兰</h4>
+                <span><em>￥</em>99.00</span>
+                <em>好评 100%</em>
+            </div>
+        </a>
+    </div>
+    <div class="list">
+        <a href="">
+            <img src="images/img1.png" alt="">
+            <div>
+                <h4> ZESPRI/佳沛 阳光金奇异果 16个/箱 1.3kg以上 新西兰</h4>
+                <span><em>￥</em>99.00</span>
+                <em>好评 100%</em>
+            </div>
+        </a>
+    </div>
+    <div class="list">
+        <a href="">
+            <img src="images/img1.png" alt="">
+            <div>
+                <h4> ZESPRI/佳沛 阳光金奇异果 16个/箱 1.3kg以上 新西兰</h4>
+                <span><em>￥</em>99.00</span>
+                <em>好评 100%</em>
+            </div>
+        </a>
+    </div>
+    <div class="list">
+        <a href="">
+            <img src="images/img1.png" alt="">
+            <div>
+                <h4> ZESPRI/佳沛 阳光金奇异果 16个/箱 1.3kg以上 新西兰</h4>
+                <span><em>￥</em>99.00</span>
+                <em>好评 100%</em>
+            </div>
+        </a>
+    </div>
+    <div class="list">
+        <a href="">
+            <img src="images/img1.png" alt="">
+            <div>
+                <h4> ZESPRI/佳沛 阳光金奇异果 16个/箱 1.3kg以上 新西兰</h4>
+                <span><em>￥</em>99.00</span>
+                <em>好评 100%</em>
+            </div>
+        </a>
+    </div>
+</div>
+<footer>
+    <div class="menu">
+        <div><a href="">首页</a></div>
+        <div><a href="">分类</a></div>
+        <div><a href="">购物车</a></div>
+        <div><a href="">我的</a></div>
+    </div>
+</footer>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    //    basic
+    var html =document.documentElement;
+    html.style.fontSize = html.clientWidth / 15+'px';
+    document.addEventListener('touchstart',function(ev){ev.preventDefault});
+//tab
+    var ali=$('.tab li')
+
+    $('.tabl').on('touchend',function(e) {
+
+        for(var i=0;i<ali.length-1;i++){
+            $('.tab li').removeClass('active');
+        }
+            $(this).attr('class','.tabl active');
+
+
+        $(".list_content").addClass('hide').eq($(this).index()).removeClass('hide');});
+
+</script>
+</body>
+</html>

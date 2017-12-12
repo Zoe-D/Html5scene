@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地址管理</title>
+    <!-- default CSS -->
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+<header class="head_title">
+        <a href=""><img src="images/leftbtn.png" alt="" class="pre_btn"></a>
+        <h1 >地址管理</h1>
+</header>
+<section class="setadress">
+    <!--<div class="card_group">-->
+        <!--<div class="card_content">-->
+            <!--<span><em>姓名</em><i>电话号码</i></span>-->
+            <!--<span>山东省青岛市市南区太平路</span>-->
+        <!--</div>-->
+        <!--<div class="card_foot clearfix">-->
+            <!--<div class="left">-->
+                <!--<input type="radio" id="address1" name="setaddress"><label class="lableInput active">默认地址</label>-->
+            <!--</div>-->
+            <!--<div class="right">-->
+                <!--<span class="edit">编辑</span>-->
+                <!--<span class="delete">删除</span>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="card_group">-->
+        <!--<div class="card_content">-->
+            <!--<span><em>姓名</em><i>电话号码</i></span>-->
+            <!--<span>山东省青岛市市南区太平路</span>-->
+        <!--</div>-->
+        <!--<div class="card_foot clearfix">-->
+            <!--<div class="left">-->
+                <!--<input type="radio" id="address2" name="setaddress"><label class="lableInput">设为默认</label>-->
+            <!--</div>-->
+            <!--<div class="right">-->
+                <!--<a class="edit">编辑</a>-->
+                <!--<a class="delete">删除</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="card_group">-->
+        <!--<div class="card_content">-->
+            <!--<span><em>姓名</em><i>电话号码</i></span>-->
+            <!--<span>山东省青岛市市南区太平路</span>-->
+        <!--</div>-->
+        <!--<div class="card_foot clearfix">-->
+            <!--<div class="left">-->
+                <!--<input type="radio" id="address3" name="setaddress"><label class="lableInput">设为默认</label>-->
+            <!--</div>-->
+            <!--<div class="right">-->
+                <!--<a class="edit">编辑</a>-->
+                <!--<a class="delete">删除</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="card_group">-->
+        <!--<div class="card_content">-->
+            <!--<span><em>姓名</em><i>电话号码</i></span>-->
+            <!--<span>山东省青岛市市南区太平路</span>-->
+        <!--</div>-->
+        <!--<div class="card_foot clearfix">-->
+            <!--<div class="left">-->
+                <!--<input type="radio" id="address4" name="setaddress"><label class="lableInput">设为默认</label>-->
+            <!--</div>-->
+            <!--<div class="right">-->
+                <!--<a class="edit">编辑</a>-->
+                <!--<a class="delete">删除</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="card_group">-->
+        <!--<div class="card_content">-->
+            <!--<span><em>姓名</em><i>电话号码</i></span>-->
+            <!--<span>山东省青岛市市南区太平路</span>-->
+        <!--</div>-->
+        <!--<div class="card_foot clearfix">-->
+            <!--<div class="left">-->
+                <!--<input type="radio" id="address5" name="setaddress"><label class="lableInput">设为默认</label>-->
+            <!--</div>-->
+            <!--<div class="right">-->
+                <!--<a class="edit">编辑</a>-->
+                <!--<a class="delete">删除</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="card_group">
+        <div class="card_content">
+            <span><em>姓名</em><i>电话号码</i></span>
+            <span>山东省青岛市市南区太平路</span>
+        </div>
+        <div class="card_foot clearfix">
+            <div class="left">
+                <input type="radio" id="address6" name="setaddress"><label class="lableInput">设为默认</label>
+            </div>
+            <div class="right">
+                <a class="edit">编辑</a>
+                <a class="delete">删除</a>
+            </div>
+        </div>
+    </div>
+    <a href="" class="button">新建地址</a>
+</section>
+<footer>
+    <div class="menu">
+        <div><a href="">首页</a></div>
+        <div><a href="">分类</a></div>
+        <div><a href="">购物车</a></div>
+        <div><a href="">我的</a></div>
+    </div>
+</footer>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    //    basic
+    var html =document.documentElement;
+    html.style.fontSize = html.clientWidth / 15+'px';
+//    document.addEventListener('touchstart',function(ev){ev.preventDefault});
+
+    //
+    var aLable = document.querySelectorAll('.lableInput');
+    var len=aLable.length;
+    for(var i=0;i<aLable.length;i++){
+        aLable[i].onclick = function () {
+            for(var j=0;j<len;j++){
+                aLable[j].className ='lableInput';
+                aLable[j].innerHTML='设为默认';
+            }
+
+                this.className ='lableInput active';
+                this.innerHTML='默认地址';
+
+        }
+    }
+
+</script>
+</body>
+</html>

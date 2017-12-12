@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <!-- default CSS -->
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+<header class="head_title1">
+        <a href=""><img src="images/leftbtn.png" alt="" class="pre_btn"></a>
+        <h1 >商品详情</h1>
+        <a href="" class="share"></a>
+</header>
+<section class="details_content">
+    <div class="top">
+        <img src="images/imgbig.png" alt="" >
+        <h3>【预售】生鲜 云南杨梅 约500g 单果约15-20g 新鲜水果</h3>
+        <i class="price">￥13.90</i>
+        <span><em>市场价：<i>￥13.90</i></em><em>快递：<i>免运费</i></em><em>月销量：<i>11</i>笔</em></span>
+        <br>
+        <span>服务：由青岛日报官方商城发货</span>
+    </div>
+    <!--库存-->
+    <div class="sum">
+        <span>库存：<i>29</i> 件</span>
+        <br/>
+        <span>数量</span>
+        <span class="num">
+                <input type="button" class="sub" value="-">
+                <input type="text" class="txt"  value="1"/>
+                <input type="button" class="add" value="+">
+            </span>
+    </div>
+    <div class="cont_details ">
+        <ul class="tab2 clearfix">
+            <li class="active">商品介绍</li>
+            <li>规格参数</li>
+            <li>累计评价</li>
+        </ul>
+        <div class="introduce">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+            <img src="images/7.jpg" alt="">
+        </div>
+        <div class="specification hide">
+            <table>
+                <tr>
+                    <td>商品编号</td>
+                    <td>114920587</td>
+                </tr>
+                <tr>
+                    <td>贮存条件</td>
+                    <td>0-4℃</td>
+                </tr>
+                <tr>
+                    <td>保质期</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>净含量</td>
+                    <td>200g</td>
+                </tr>
+            </table>
+        </div>
+        <div class="evaluate hide">
+            <dl class="eval_list">
+                <dt class="clearfix"><img src="images/food.png" alt=""><span><em>姓名</em><i>2017-06-28</i></span></dt>
+                <dd>商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明</dd>
+            </dl>
+            <dl class="eval_list">
+                <dt class="clearfix"><img src="images/food.png" alt=""><span><em>姓名</em><i>2017-06-28</i></span></dt>
+                <dd>商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明</dd>
+            </dl>
+            <dl class="eval_list">
+                <dt class="clearfix"><img src="images/food.png" alt=""><span><em>姓名</em><i>2017-06-28</i></span></dt>
+                <dd>商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明商品说明</dd>
+            </dl>
+        </div>
+    </div>
+<!--推荐-->
+    <div class="recom">
+        <h4>商品推荐</h4>
+    </div>
+    <div class="recommend">
+
+        <div>
+            <a href=""><img src="images/img4.png" alt=""> ZESPRI/佳沛 阳光金奇异果<span>￥145.00</span></a>
+        </div>
+        <div>
+            <a href=""><img src="images/img4.png" alt=""> ZESPRI/佳沛 阳光金奇异果<span>￥145.00</span></a>
+        </div>
+        <div>
+            <a href=""><img src="images/img4.png" alt=""> ZESPRI/佳沛 阳光金奇异果<span>￥145.00</span></a>
+        </div>
+    </div>
+
+</section>
+<div class="buy clearfix">
+    <a href="">加入购物车</a>
+    <a href="">立即购买</a>
+</div>
+<footer>
+    <div class="menu">
+        <div><a href="">首页</a></div>
+        <div><a href="">分类</a></div>
+        <div><a href="">购物车</a></div>
+        <div><a href="">我的</a></div>
+    </div>
+</footer>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    //    basic
+    var html =document.documentElement;
+    html.style.fontSize = html.clientWidth / 15+'px';
+//    document.addEventListener('touchstart',function(ev){ev.preventDefault});
+
+    //tab
+    var ali=$('.tab2 li')
+
+    $('.tab2 li').on('touchend',function(e) {
+
+        for(var i=0;i<ali.length-1;i++){
+            $('.tab2 li').removeClass('active');
+        }
+        $(this).attr('class','active');
+
+
+        $(".cont_details div").addClass('hide').eq($(this).index()).removeClass('hide');});
+//    购物车
+//    减
+    $('.sub').click(function(){
+        var txt=$(this).siblings('.txt');
+        var a=txt.attr('value');
+//        alert(txt.attr('value'));
+        if(a>1){
+            a--;
+            txt.attr('value',a);
+        }else{
+            txt.attr('value',1);
+        }
+    });
+//    增
+    $('.add').click(function(){
+        var txt=$(this).siblings('.txt');
+        var a=txt.attr('value');
+        a++;
+        txt.attr('value',a);
+    });
+//    删
+    $('.del').click(function(){
+        $(this).parents(".list").css('display','none');
+    });
+
+</script>
+</body>
+</html>

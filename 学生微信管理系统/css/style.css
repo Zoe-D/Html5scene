@@ -1,0 +1,379 @@
+body,
+body * {
+  -webkit-text-size-adjust: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+strong {
+  font-weight: normal;
+}
+a,
+input[type=button],
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+}
+input {
+  border-radius: 0.2rem;
+}
+a {
+  text-decoration: none;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+body {
+  background: #f3f3f3;
+}
+header {
+  height: 1.4rem;
+  background: #62c0fe;
+  width: 15rem;
+  font-size: 0.52rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4rem;
+  position: relative;
+}
+header h2 {
+  font-weight: normal;
+}
+header .admin {
+  display: block;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  width: 1.66rem;
+  height: 1.4rem;
+  background: url(../img/people.png) no-repeat center left;
+  background-size: 0.64rem 0.8rem;
+}
+.border {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+.messages {
+  padding: 0.3rem 0;
+  width: 15rem;
+  height: 0.8rem;
+  background: #fff;
+  margin-bottom: 0.4rem;
+}
+.messages .list_messages {
+  display: block;
+  width: 1.92rem;
+  height: 0.68rem;
+  background: url(../img/message.jpg) no-repeat 80% center;
+  background-size: 0.8rem 0.68rem;
+  border-right: 1px solid #e8e6e7;
+  padding-right: 0.4rem;
+  float: left;
+  padding-top: 0.1rem;
+}
+.messages .rows {
+  width: 11.6rem;
+  float: left;
+  padding-left: 0.4rem;
+  padding-top: 0.1rem;
+}
+.messages .rows li {
+  background: url(../img/arrow.png) no-repeat center right;
+  background-size: 0.3rem 0.5rem;
+  display: none;
+  transition: 3s;
+  animation: fade-in;
+  animation-duration: 5s;
+  /*动画持续时间*/
+  -webkit-animation: fade-in 5s;
+  /*针对webkit内核*/
+}
+.messages .rows li a {
+  font: 24/50rem/34/50rem '微软雅黑';
+  color: #777;
+}
+.messages .show {
+  display: block !important;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0.2;
+  }
+  /*初始状态 透明度为0*/
+  5% {
+    opacity: 0.5;
+  }
+  /*过渡状态 透明度为0*/
+  20% {
+    opacity: 1;
+  }
+  /*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in {
+  /*针对webkit内核*/
+  0% {
+    opacity: 0.2;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+/*nav*/
+nav {
+  padding: 0.7rem 0.56rem 0.2rem;
+  background: #fff;
+  width: 13.88rem;
+}
+nav .navBox {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 0.6rem;
+}
+nav .navBox div {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 0;
+}
+nav .navBox div a {
+  font-size: 0.56rem;
+  text-align: center;
+  color: #666;
+  display: block;
+  line-height: 1.6rem;
+  position: relative;
+}
+nav .navBox div a:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 1.82rem;
+  height: 1.82rem;
+  background: url(../img/img.png) no-repeat;
+  background-size: 8.4rem 3.94rem;
+}
+nav .navBox div a.point:after {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: red;
+  background-size: 0.5rem 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.16rem;
+  right: 0.6rem;
+}
+nav .navBox:nth-of-type(1) div:nth-of-type(1) a:before {
+  background-position: 0 0;
+}
+nav .navBox:nth-of-type(1) div:nth-of-type(2) a:before {
+  background-position: -2.06rem 0;
+}
+nav .navBox:nth-of-type(1) div:nth-of-type(3) a:before {
+  background-position: -4.24rem 0;
+}
+nav .navBox:nth-of-type(1) div:nth-of-type(4) a:before {
+  background-position: -6.58rem 0;
+}
+nav .navBox:nth-of-type(2) div:nth-of-type(1) a:before {
+  background-position: 0 -2.1rem;
+}
+nav .navBox:nth-of-type(2) div:nth-of-type(2) a:before {
+  background-position: -2.06rem -2.06rem;
+}
+nav .navBox:nth-of-type(2) div:nth-of-type(3) a:before {
+  background-position: -4.28rem -2.12rem;
+}
+nav .navBox:nth-of-type(2) div:nth-of-type(4) a:before {
+  background-position: -6.54rem -2.02rem;
+}
+nav .navBox1 {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 0.6rem;
+}
+nav .navBox1 div {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 0;
+}
+nav .navBox1 div a {
+  font-size: 0.56rem;
+  text-align: center;
+  color: #666;
+  display: block;
+  line-height: 1.6rem;
+}
+nav .navBox1 div a:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 1.82rem;
+  height: 1.82rem;
+  background: url(../img/img1.png) no-repeat;
+  background-size: 8.4rem 3.94rem;
+}
+nav .navBox1:nth-of-type(1) div:nth-of-type(1) a:before {
+  background-position: 0 0;
+}
+nav .navBox1:nth-of-type(1) div:nth-of-type(2) a:before {
+  background-position: -2.16rem 0;
+}
+nav .navBox1:nth-of-type(1) div:nth-of-type(3) a:before {
+  background-position: -4.26rem 0;
+}
+nav .navBox1:nth-of-type(1) div:nth-of-type(4) a:before {
+  background-position: -6.66rem 0;
+}
+nav .navBox1:nth-of-type(2) div:nth-of-type(1) a:before {
+  background-position: 0 -2.26rem;
+}
+nav .navBox1:nth-of-type(2) div:nth-of-type(2) a:before {
+  background-position: -2.2rem -2.24rem;
+}
+.score {
+  margin-top: 0.4rem;
+  padding: 0px 0.4rem;
+  width: 14.2rem;
+  background: #fff;
+}
+.score .title {
+  background: url(../img/square.png) no-repeat left center;
+  background-size: 0.18rem 0.5rem;
+  padding-left: 0.4rem;
+  border-bottom: 1px solid #eaeaec;
+}
+.score .title h3 {
+  font-size: 0.64rem;
+  font-weight: normal;
+  line-height: 2rem;
+  color: #62c0fe;
+  float: left;
+  padding-left: 0.2rem;
+}
+.score .title span {
+  float: left;
+  vertical-align: bottom;
+  font-size: 0.56rem;
+  color: #a29fa3;
+  line-height: 2.1rem;
+}
+.score .title a {
+  float: right;
+  color: #62c0fe;
+  font-size: 0.56rem;
+  padding-right: 0.4rem;
+  line-height: 2rem;
+}
+.scoreListBox {
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid #eaeaec;
+}
+.scoreListBox div {
+  float: left;
+  width: 2.68rem;
+  height: 2.68rem;
+  margin-left: 0.8rem;
+  margin-top: 0.6rem;
+}
+.scoreListBox div a {
+  font-size: 0.56rem;
+  text-align: center;
+  color: #666;
+  display: block;
+  line-height: 1rem;
+  width: 2.68rem;
+  height: 2.68rem;
+}
+.scoreListBox div a span {
+  display: block;
+  font-size: 0.72rem;
+  color: #ebb628;
+}
+.scoreListBox div a .top {
+  background: url(../img/shape1.png) no-repeat 80% center;
+  background-size: 0.42rem 0.5rem;
+}
+.scoreListBox div a .bottom {
+  background: url(../img/shape2.png) no-repeat 80% center;
+  background-size: 0.42rem 0.5rem;
+}
+.scoreListBox div a .line {
+  background: url(../img/line.png) no-repeat 80% center;
+  background-size: 0.34rem 0.08rem;
+}
+.totle {
+  text-align: right;
+  font-size: 0.68rem;
+  color: #59b9f6;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  width: 14.2rem;
+  padding: 0 0.4rem;
+  background: #fff;
+  border-bottom: 1px solid #e7e7e7;
+}
+.list_score {
+  background: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+  margin-top: 0.4rem;
+}
+.list_score .left {
+  font-size: 0.64rem;
+  line-height: 1rem;
+  color: #666;
+  float: left;
+  padding: 0.5rem;
+  width: 11rem;
+}
+.list_score .left span {
+  display: block;
+  font-size: 0.52rem;
+  color: #a9a9a9;
+}
+.list_score .left span em {
+  font-style: normal;
+  display: inline-block;
+  padding-left: 0.2rem;
+}
+.list_score .right {
+  float: right;
+  height: 1.7rem;
+  padding: 0.5rem;
+  width: 1.6rem;
+}
+.list_score .right span {
+  display: block;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #62c0fe;
+  padding-top: 0.1rem;
+}
+.list_score .right i {
+  font-style: normal;
+  font-size: 0.48rem;
+  color: #a9a9a9;
+  line-height: 0;
+  display: block;
+  padding-top: 0.4rem;
+}

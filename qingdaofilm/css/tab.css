@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.none {display: none;}
+.list{ width:550px; height:60px; overflow:hidden; margin:0 auto;}
+.list ul{ list-style:none; width:600px;}
+.list ul li{ cursor:pointer; height:40px; width:128px; margin-right:10px; float:left; text-align:center;}
+.list ul li.normal{ border:1px #333 solid;}
+.list ul li.active{ background:#c10505; color:#fff;}
+.list ul li h1{ font-size:16px; line-height:40px;}
+
+.list2{ list-style:none; width:1000px; margin:0 auto; background:#f5f5f5; padding:20px; height:300px; margin-bottom:60px;}
+
+
+
+
+
+
+
+
+
+
+
+

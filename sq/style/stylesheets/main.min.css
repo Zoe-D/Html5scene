@@ -1,0 +1,1981 @@
+@charset "UTF-8";
+/*-- -- all tag -- --*/
+/* line 5, ../sass/main.min.scss */
+body, dl, h1, h2, h3, h5, p, ul {
+  margin: 0;
+}
+
+/* line 8, ../sass/main.min.scss */
+.H_1, .loading, .swiper-container, .swiper-wrapper, body, html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 12, ../sass/main.min.scss */
+.H_1, .H_2, .H_4, .H_5, .H_6, .H_7, .H_8, .H_9, .H_10, .H_11, .H_12, .H_13, .H_14, .H_15, .H_16, .H_17, .H_18, .loading, .swiper-container, .swiper-wrapper, body, html {
+  height: 100% !important;
+}
+
+/* line 14, ../sass/main.min.scss */
+body {
+  overflow: hidden;
+}
+
+/* line 17, ../sass/main.min.scss */
+.audio {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 10px;
+  right: 10px !important;
+  left: auto !important;
+  z-index: 10001;
+}
+
+/* line 26, ../sass/main.min.scss */
+.audio_o {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../images/music.png) no-repeat;
+  background-size: contain;
+}
+
+/*-- -- Loading -- --*/
+/* line 34, ../sass/main.min.scss */
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-size: cover;
+  background: url("../../images/1-bg.jpg") bottom center no-repeat;
+}
+
+/* line 43, ../sass/main.min.scss */
+.loadBox {
+  position: relative;
+  width: 7.15625rem;
+  height: 3.03125rem;
+  margin: 0 auto;
+  overflow: hidden;
+  top: 12.5625rem;
+  background-size: 7.15625rem 3.03125rem;
+}
+
+/* line 53, ../sass/main.min.scss */
+.wordBg {
+  width: 7.15625rem;
+  height: 3.03125rem;
+  overflow: hidden;
+  background: url("../../images/loading-2.png") top center no-repeat;
+  background-size: 7.15625rem auto;
+  -webkit-animation: load 1s ease .25s infinite;
+  -moz-animation: load 1s ease .25s infinite;
+  -o-animation: load 1s ease .25s infinite;
+  animation: load 1s ease .25s infinite;
+}
+
+/* line 64, ../sass/main.min.scss */
+.loadBox img {
+  width: 7.15625rem;
+  height: 3.03125rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@-webkit-keyframes load {
+  0% {
+    height: 0;
+    background-size: 7.15625rem auto;
+  }
+  100% {
+    height: 3.03125rem;
+    background-size: 7.15625rem auto;
+  }
+}
+/* line 85, ../sass/main.min.scss */
+.loadEffect span:nth-child(8) {
+  bottom: 14px;
+  left: 14px;
+  -webkit-animation-delay: 1.04s;
+}
+
+/*-- -- FirstPage -- --*/
+/* line 93, ../sass/main.min.scss */
+.H_1 {
+  background: url("../../images/1-bg.jpg") bottom center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 99, ../sass/main.min.scss */
+.H_1 img {
+  position: absolute;
+}
+
+/* line 102, ../sass/main.min.scss */
+.H_1 .main_ani_04 {
+  width: 16.4375rem;
+  height: 0.8125rem;
+  left: 2.03125rem;
+  top: 18.4375rem;
+}
+
+/* line 108, ../sass/main.min.scss */
+.H_1 .main_ani_03 {
+  width: 19.53125rem;
+  height: 19.5rem;
+  right: 0rem;
+  top: 0rem;
+}
+
+/* line 115, ../sass/main.min.scss */
+.H_1 .main_ani_02 {
+  width: 9.09375rem;
+  height: 4.25rem;
+  top: 21.875rem;
+  left: 5.625rem;
+}
+
+/* line 122, ../sass/main.min.scss */
+.H_1 .main_ani_01, .H_1 .main_ani_01_1 {
+  width: 20rem;
+  height: 26.5625rem;
+  left: 0rem;
+  top: 0rem;
+}
+
+/* line 128, ../sass/main.min.scss */
+.H_1 .main_ani_01_1 {
+  -webkit-animation: niceIn .4s .7s ease;
+  -moz-animation: niceIn .4s .7s ease;
+  -o-animation: niceIn .4s .7s ease;
+  animation: niceIn .4s .7s ease;
+  transition: all;
+}
+
+/*-- -- SecondPage -- --*/
+/* line 139, ../sass/main.min.scss */
+.H_2 {
+  background: url("../../images/2-1.jpg") center top no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 146, ../sass/main.min.scss */
+.H_2 img, .H_3 img, .H_4 img, .H_5 img, .H_6 img, .H_7 img, .H_8 img, .H_9 img, .H_10 img, .H_11 img, .H_12 img, .H_13 img, .H_14 img, .H_15 img, .H_16 img, .H_17 img, .H_18 img {
+  position: absolute !important;
+}
+
+/* line 149, ../sass/main.min.scss */
+.H_2 .main_ani_06 {
+  position: absolute;
+  width: 3.28125rem;
+  height: 1.1875rem;
+  top: 5.3125rem;
+  left: 5.28125rem;
+}
+
+/* line 156, ../sass/main.min.scss */
+.H_2 .main_ani_07 {
+  position: absolute;
+  width: 9.53125rem;
+  height: 2.4375rem;
+  top: 7.40625rem;
+  left: 5.40625rem;
+}
+
+/* line 163, ../sass/main.min.scss */
+.H_2 .main_ani_08 {
+  position: absolute;
+  width: 3.28125rem;
+  height: 1.1875rem;
+  top: 11.625rem;
+  left: 5.40625rem;
+}
+
+/* line 170, ../sass/main.min.scss */
+.H_2 .main_ani_09 {
+  position: absolute;
+  width: 9.4375rem;
+  height: 2.46875rem;
+  top: 13.59375rem;
+  left: 5.40625rem;
+}
+
+/* line 177, ../sass/main.min.scss */
+.H_2 .main_ani_10 {
+  position: absolute;
+  width: 11.65625rem;
+  height: 2.5625rem;
+  top: 18.34375rem;
+  left: 4.09375rem;
+}
+
+/* line 184, ../sass/main.min.scss */
+.H_2 .main_ani_11 {
+  position: absolute;
+  width: 9.3125rem;
+  height: 0.78125rem;
+  top: 27.5625rem;
+  left: 5.625rem;
+}
+
+/* line 191, ../sass/main.min.scss */
+.H_2 .main_ani_12 {
+  position: absolute;
+  width: 15.40625rem;
+  height: 22.0625rem;
+  top: 2.78125rem;
+  left: 2.25rem;
+}
+
+/*-- -- 3Page -- --*/
+/*-- -- begin -- --*/
+/* line 201, ../sass/main.min.scss */
+.H_3, .H_4, .H_5, .H_6, .H_7, .H_8, .H_9, .H_10, .H_11, .H_12, .H_13, .H_14, .H_15, .H_16, .H_17, .H_18 {
+  background: url("../../images/3-1.jpg") center top no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 208, ../sass/main.min.scss */
+.H_3 .main_ani_13, .H_4 .main_ani_22, .H_5 .main_ani_5_1, .H_6 .main_ani_6_1, .H_7 .main_ani_7_1, .H_8 .main_ani_8_1, .H_9 .main_ani_9_1, .H_10 .main_ani_10_1, .H_11 .main_ani_11_1, .H_12 .main_ani_12_1, .H_13 .main_ani_13_1 {
+  width: 6.21875rem;
+  height: 6.15625rem;
+  left: 7.03125rem;
+  top: 1.40625rem;
+}
+
+/* line 214, ../sass/main.min.scss */
+.H_3 .main_ani_14, .H_4 .main_ani_23, .H_5 .main_ani_51, .H_6 .main_ani_61, .H_7 .main_ani_71, .H_8 .main_ani_81, .H_9 .main_ani_91, .H_10 .main_ani_101, .H_11 .main_ani_111, .H_12 .main_ani_121, .H_13 .main_ani_131 {
+  width: 3rem;
+  height: 1.75rem;
+  left: 8.625rem;
+  top: 3.5625rem;
+}
+
+/* line 220, ../sass/main.min.scss */
+.H_3 .main_ani_15 {
+  width: 12.34375rem;
+  height: 16.6875rem;
+  left: 6.4375rem;
+  top: 8.5rem;
+}
+
+/* line 226, ../sass/main.min.scss */
+.H_3 .main_ani_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 2.78125rem;
+  top: 21.8125rem;
+}
+
+/* line 232, ../sass/main.min.scss */
+.H_3 .main_ani_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 2.78125rem;
+  top: 21.8125rem;
+}
+
+/* line 238, ../sass/main.min.scss */
+.H_3 .main_ani_18 {
+  width: 8.84375rem;
+  height: 3.59375rem;
+  left: 5.5rem;
+  top: 20.0625rem;
+}
+
+/* line 244, ../sass/main.min.scss */
+.H_3 .main_ani_19 {
+  width: 15.8125rem;
+  height: 1.125rem;
+  left: 2.125rem;
+  top: 25.46875rem;
+}
+
+/* line 250, ../sass/main.min.scss */
+.H_3 .main_ani_20 {
+  width: 20rem;
+  height: 5.8125rem;
+  left: 0rem;
+  bottom: 0rem;
+}
+
+/*-- -- 4Page -- --*/
+/* line 259, ../sass/main.min.scss */
+.H_4 .main_ani_24 {
+  width: 20rem;
+  height: 31.5rem;
+  left: 0rem;
+  top: 0rem;
+}
+
+/* line 265, ../sass/main.min.scss */
+.H_4 .main_ani_25 {
+  width: 8.5625rem;
+  height: 8.84375rem;
+  left: 10rem;
+  top: 7.625rem;
+}
+
+/* line 271, ../sass/main.min.scss */
+.H_4 .main_ani_26, .H_5 .main_ani_5_2, .H_6 .main_ani_6_2, .H_7 .main_ani_7_2, .H_8 .main_ani_8_2, .H_9 .main_ani_9_2, .H_10 .main_ani_10_2, .H_11 .main_ani_11_2, .H_12 .main_ani_12_2, .H_13 .main_ani_13_2 {
+  width: 24.125rem;
+  height: 5.25rem;
+  left: 0rem;
+  bottom: 0rem;
+  z-index: -1;
+}
+
+/* line 278, ../sass/main.min.scss */
+.H_4 .main_ani_27 {
+  width: 12.75rem;
+  height: 3.59375rem;
+  left: 3.53125rem;
+  top: 19.375rem;
+}
+
+/* line 284, ../sass/main.min.scss */
+.H_4 .main_ani_28 {
+  width: 7.71875rem;
+  height: 1.125rem;
+  left: 5.9375rem;
+  top: 24.21875rem;
+}
+
+/* line 290, ../sass/main.min.scss */
+.H_4 .main_ani_29 {
+  width: 16.3125rem;
+  height: 1.15625rem;
+  left: 1.65625rem;
+  top: 26rem;
+}
+
+/* line 296, ../sass/main.min.scss */
+.H_4 .main_ani_2_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 2.78125rem;
+  top: 20.3125rem;
+}
+
+/* line 302, ../sass/main.min.scss */
+.H_4 .main_ani_2_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 2.78125rem;
+  top: 20.3125rem;
+}
+
+/*-- -- 5Page -- --*/
+/* line 310, ../sass/main.min.scss */
+.H_5 .main_ani_5_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 1.5625rem;
+  top: 20.90625rem;
+}
+
+/* line 316, ../sass/main.min.scss */
+.H_5 .main_ani_5_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 1.5625rem;
+  top: 20.90625rem;
+}
+
+/* line 322, ../sass/main.min.scss */
+.H_5 .main_ani_52 {
+  width: 36.84375rem;
+  height: 10.375rem;
+  left: 0.90625rem;
+  top: 8.28125rem;
+}
+
+/* line 328, ../sass/main.min.scss */
+.H_5 .main_ani_53 {
+  width: 13.25rem;
+  height: 2.21875rem;
+  left: 2.9375rem;
+  top: 20.3125rem;
+}
+
+/* line 334, ../sass/main.min.scss */
+.H_5 .main_ani_54 {
+  width: 4.34375rem;
+  height: 1.09375rem;
+  left: 7.53125rem;
+  top: 24.375rem;
+}
+
+/* line 340, ../sass/main.min.scss */
+.H_5 .main_ani_55 {
+  width: 11.8125rem;
+  height: 1.125rem;
+  left: 3.5625rem;
+  top: 25.8125rem;
+}
+
+/*-- -- 6Page -- --*/
+/* line 349, ../sass/main.min.scss */
+.H_6 .main_ani_6_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 2.3125rem;
+  top: 21.125rem;
+}
+
+/* line 355, ../sass/main.min.scss */
+.H_6 .main_ani_6_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 2.3125rem;
+  top: 21.125rem;
+}
+
+/* line 361, ../sass/main.min.scss */
+.H_6 .main_ani_62 {
+  width: 10.84375rem;
+  height: 12.03125rem;
+  left: 5.65625rem;
+  top: 8.25rem;
+}
+
+/* line 367, ../sass/main.min.scss */
+.H_6 .main_ani_63 {
+  width: 10.15625rem;
+  height: 4.96875rem;
+  left: 4.625rem;
+  top: 18.25rem;
+}
+
+/* line 373, ../sass/main.min.scss */
+.H_6 .main_ani_64 {
+  width: 9.96875rem;
+  height: 1.09375rem;
+  left: 4.84375rem;
+  top: 24.4375rem;
+}
+
+/* line 379, ../sass/main.min.scss */
+.H_6 .main_ani_65 {
+  width: 14.03125rem;
+  height: 1.0625rem;
+  left: 2.625rem;
+  top: 25.96875rem;
+}
+
+/*-- -- 7Page -- --*/
+/* line 388, ../sass/main.min.scss */
+.H_7 .main_ani_7_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 0.78125rem;
+  top: 20.59375rem;
+}
+
+/* line 394, ../sass/main.min.scss */
+.H_7 .main_ani_7_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 0.78125rem;
+  top: 20.59375rem;
+}
+
+/* line 400, ../sass/main.min.scss */
+.H_7 .main_ani_72 {
+  width: 13.125rem;
+  height: 10.53125rem;
+  left: 3.4375rem;
+  top: 8.96875rem;
+}
+
+/* line 406, ../sass/main.min.scss */
+.H_7 .main_ani_73 {
+  width: 14.375rem;
+  height: 4.96875rem;
+  left: 2.5625rem;
+  top: 18.46875rem;
+}
+
+/* line 412, ../sass/main.min.scss */
+.H_7 .main_ani_74 {
+  width: 10.46875rem;
+  height: 1.125rem;
+  left: 4.15625rem;
+  top: 24.90625rem;
+}
+
+/* line 418, ../sass/main.min.scss */
+.H_7 .main_ani_75 {
+  width: 9.5625rem;
+  height: 1.125rem;
+  left: 4.90625rem;
+  top: 26.625rem;
+}
+
+/*-- -- 8Page -- --*/
+/* line 426, ../sass/main.min.scss */
+.H_8 .main_ani_8_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 2.40625rem;
+  top: 19.6875rem;
+}
+
+/* line 432, ../sass/main.min.scss */
+.H_8 .main_ani_8_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 2.40625rem;
+  top: 19.6875rem;
+}
+
+/* line 438, ../sass/main.min.scss */
+.H_8 .main_ani_82 {
+  width: 12.875rem;
+  height: 8.125rem;
+  left: 3.40625rem;
+  top: 8.53125rem;
+}
+
+/* line 444, ../sass/main.min.scss */
+.H_8 .main_ani_83 {
+  width: 12.78125rem;
+  height: 4.96875rem;
+  left: 3.125rem;
+  top: 17.71875rem;
+}
+
+/* line 450, ../sass/main.min.scss */
+.H_8 .main_ani_84 {
+  width: 12.21875rem;
+  height: 1.09375rem;
+  left: 3.75rem;
+  top: 24.3125rem;
+}
+
+/* line 456, ../sass/main.min.scss */
+.H_8 .main_ani_85 {
+  width: 11.84375rem;
+  height: 1.09375rem;
+  left: 3.625rem;
+  top: 25.875rem;
+}
+
+/*-- -- 9Page -- --*/
+/* line 464, ../sass/main.min.scss */
+.H_9 .main_ani_9_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 2.46875rem;
+  top: 20.75rem;
+}
+
+/* line 470, ../sass/main.min.scss */
+.H_9 .main_ani_9_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 2.46875rem;
+  top: 20.75rem;
+}
+
+/* line 476, ../sass/main.min.scss */
+.H_9 .main_ani_92 {
+  width: 17.625rem;
+  height: 20.4375rem;
+  left: 2.40625rem;
+  top: 8.53125rem;
+}
+
+/* line 482, ../sass/main.min.scss */
+.H_9 .main_ani_93 {
+  width: 11.46875rem;
+  height: 4.96875rem;
+  left: 4.28125rem;
+  top: 18.625rem;
+}
+
+/* line 488, ../sass/main.min.scss */
+.H_9 .main_ani_94 {
+  width: 7.71875rem;
+  height: 1.09375rem;
+  left: 6.09375rem;
+  top: 24.59375rem;
+}
+
+/* line 494, ../sass/main.min.scss */
+.H_9 .main_ani_95 {
+  width: 11.8125rem;
+  height: 1.125rem;
+  left: 3.84375rem;
+  top: 26.40625rem;
+}
+
+/*-- -- 10Page -- --*/
+/* line 502, ../sass/main.min.scss */
+.H_10 .main_ani_10_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 1.8125rem;
+  top: 20.4375rem;
+}
+
+/* line 508, ../sass/main.min.scss */
+.H_10 .main_ani_10_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 1.8125rem;
+  top: 20.4375rem;
+}
+
+/* line 514, ../sass/main.min.scss */
+.H_10 .main_ani_102 {
+  width: 9.4375rem;
+  height: 8.5rem;
+  left: 0.96875rem;
+  top: 9.1875rem;
+}
+
+/* line 520, ../sass/main.min.scss */
+.H_10 .main_ani_102_1 {
+  width: 8.8125rem;
+  height: 8.46875rem;
+  left: 10.34375rem;
+  top: 9.1875rem;
+}
+
+/* line 526, ../sass/main.min.scss */
+.H_10 .main_ani_103 {
+  width: 11.90625rem;
+  height: 3.59375rem;
+  left: 3.8125rem;
+  top: 19.46875rem;
+}
+
+/* line 532, ../sass/main.min.scss */
+.H_10 .main_ani_104 {
+  width: 10.59375rem;
+  height: 1.15625rem;
+  left: 4.8125rem;
+  top: 24.6875rem;
+}
+
+/* line 538, ../sass/main.min.scss */
+.H_10 .main_ani_105 {
+  width: 7.3125rem;
+  height: 1.125rem;
+  left: 6.03125rem;
+  top: 26.3125rem;
+}
+
+/*-- -- 11Page -- --*/
+/* line 546, ../sass/main.min.scss */
+.H_11 .main_ani_11_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 2.46875rem;
+  top: 20.875rem;
+}
+
+/* line 552, ../sass/main.min.scss */
+.H_11 .main_ani_11_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 2.46875rem;
+  top: 20.875rem;
+}
+
+/* line 558, ../sass/main.min.scss */
+.H_11 .main_ani_112 {
+  width: 7.03125rem;
+  height: 10.5625rem;
+  left: 2.90625rem;
+  top: 8.9375rem;
+}
+
+/* line 564, ../sass/main.min.scss */
+.H_11 .main_ani_112_1 {
+  width: 7.78125rem;
+  height: 10.59375rem;
+  left: 6.75rem;
+  top: 8.90625rem;
+}
+
+/* line 570, ../sass/main.min.scss */
+.H_11 .main_ani_112_2 {
+  width: 5.21875rem;
+  height: 8.90625rem;
+  left: 12.75rem;
+  top: 9.53125rem;
+}
+
+/* line 576, ../sass/main.min.scss */
+.H_11 .main_ani_113 {
+  width: 10.15625rem;
+  height: 3.59375rem;
+  left: 4.53125rem;
+  top: 19.46875rem;
+}
+
+/* line 582, ../sass/main.min.scss */
+.H_11 .main_ani_114 {
+  width: 10.375rem;
+  height: 1.09375rem;
+  left: 4.84375rem;
+  top: 24.46875rem;
+}
+
+/* line 588, ../sass/main.min.scss */
+.H_11 .main_ani_115 {
+  width: 9.59375rem;
+  height: 1.125rem;
+  left: 4.78125rem;
+  top: 26.03125rem;
+}
+
+/*-- -- 12Page -- --*/
+/* line 597, ../sass/main.min.scss */
+.H_12 .main_ani_12_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 2.5625rem;
+  top: 21.96875rem;
+}
+
+/* line 603, ../sass/main.min.scss */
+.H_12 .main_ani_12_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 2.5625rem;
+  top: 21.96875rem;
+}
+
+/* line 609, ../sass/main.min.scss */
+.H_12 .main_ani_122 {
+  width: 17.5rem;
+  height: 10.53125rem;
+  left: 1.25rem;
+  top: 8.4375rem;
+}
+
+/* line 615, ../sass/main.min.scss */
+.H_12 .main_ani_123 {
+  width: 17.5625rem;
+  height: 4.75rem;
+  left: 0.9375rem;
+  top: 18.8125rem;
+}
+
+/* line 621, ../sass/main.min.scss */
+.H_12 .main_ani_124 {
+  width: 14.46875rem;
+  height: 1.09375rem;
+  left: 2.5625rem;
+  top: 25.125rem;
+}
+
+/* line 627, ../sass/main.min.scss */
+.H_12 .main_ani_125 {
+  width: 7.3125rem;
+  height: 1.09375rem;
+  left: 6.03125rem;
+  top: 26.65625rem;
+}
+
+/*-- -- 13Page -- --*/
+/* line 635, ../sass/main.min.scss */
+.H_13 .main_ani_13_16 {
+  width: 1rem;
+  height: 0.84375rem;
+  left: 2.59375rem;
+  top: 20.53125rem;
+}
+
+/* line 641, ../sass/main.min.scss */
+.H_13 .main_ani_13_17 {
+  width: 1rem;
+  height: 0.875rem;
+  right: 2.59375rem;
+  top: 20.53125rem;
+}
+
+/* line 647, ../sass/main.min.scss */
+.H_13 .main_ani_132 {
+  width: 7.0625rem;
+  height: 7.34375rem;
+  left: 7.6875rem;
+  top: 10.8125rem;
+}
+
+/* line 653, ../sass/main.min.scss */
+.H_13 .main_ani_132_1 {
+  width: 6.5625rem;
+  height: 8.71875rem;
+  left: 11rem;
+  top: 8.3125rem;
+}
+
+/* line 659, ../sass/main.min.scss */
+.H_13 .main_ani_132_2 {
+  width: 12.96875rem;
+  height: 6.21875rem;
+  left: 2.4375rem;
+  top: 9.84375rem;
+}
+
+/* line 665, ../sass/main.min.scss */
+.H_13 .main_ani_133 {
+  width: 14.53125rem;
+  height: 4.78125rem;
+  left: 2.53125rem;
+  top: 18.8125rem;
+}
+
+/* line 671, ../sass/main.min.scss */
+.H_13 .main_ani_134 {
+  width: 14.6875rem;
+  height: 1.09375rem;
+  left: 2.59375rem;
+  top: 25.46875rem;
+}
+
+/*-- -- 15Page -- --*/
+/* line 679, ../sass/main.min.scss */
+.H_14 .main_ani_141 {
+  width: 10.25rem;
+  height: 5.3125rem;
+  top: 1.25rem;
+}
+
+/* line 684, ../sass/main.min.scss */
+.H_14 .main_ani_142 {
+  width: 10.5625rem;
+  height: 1.96875rem;
+  right: 4.46875rem;
+  top: 7.09375rem;
+}
+
+/* line 690, ../sass/main.min.scss */
+.H_14 .main_ani_143 {
+  width: 10.875rem;
+  height: 1.96875rem;
+  left: 3.9375rem;
+  top: 10.125rem;
+}
+
+/* line 696, ../sass/main.min.scss */
+.H_14 .main_ani_144 {
+  width: 7.4375rem;
+  height: 3.9375rem;
+  left: 6.125rem;
+  top: 13.3125rem;
+}
+
+/* line 702, ../sass/main.min.scss */
+.H_14 .main_ani_145 {
+  width: 11.90625rem;
+  height: 0.84375rem;
+  left: 3.84375rem;
+  top: 18.40625rem;
+}
+
+/* line 708, ../sass/main.min.scss */
+.H_14 .main_ani_146 {
+  width: 12.21875rem;
+  height: 0.8125rem;
+  left: 3.625rem;
+  top: 20.6875rem;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+/* line 716, ../sass/main.min.scss */
+.H_14 .main_ani_147 {
+  width: 12.65625rem;
+  height: 0.8125rem;
+  left: 3.59375rem;
+  top: 22.34375rem;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+/* line 724, ../sass/main.min.scss */
+.H_14 .main_ani_148 {
+  width: 12.40625rem;
+  height: 1.90625rem;
+  left: 3.59375rem;
+  top: 24.0625rem;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+/* line 732, ../sass/main.min.scss */
+.H_14 .main_ani_149 {
+  width: 15.78125rem;
+  height: 1.21875rem;
+  left: 2.0625rem;
+  top: 27.375rem;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+}
+
+/* line 743, ../sass/main.min.scss */
+.H_14 .year {
+  position: relative;
+  color: transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 10.25rem;
+  height: 5.3125rem;
+  top: 1.3rem;
+  margin: 0 auto;
+}
+
+/* line 755, ../sass/main.min.scss */
+.H_14 .year span {
+  position: absolute;
+  display: inline-block;
+  color: 255, 204, 0, 0.3;
+  text-shadow: 0 0 50px #c57814;
+  -webkit-animation: smoky 1s 1s cubic-bezier(0.72, 0.29, 0.33, 0.95) both;
+  animation: smoky 1s 1s cubic-bezier(0.72, 0.29, 0.33, 0.95) both;
+  top: 0;
+  font-size: 4rem;
+}
+
+/* line 766, ../sass/main.min.scss */
+.H_14 .year span:nth-child(even) {
+  -webkit-animation-name: smoky-mirror;
+  animation-name: smoky-mirror;
+  text-shadow: 0 0 50px #c57814;
+}
+
+/* line 772, ../sass/main.min.scss */
+.H_14 .year span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  left: 0.71875rem;
+}
+
+/* line 778, ../sass/main.min.scss */
+.H_14 .year span:nth-of-type(2) {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  left: 2.84375rem;
+}
+
+/* line 785, ../sass/main.min.scss */
+.H_14 .year span:nth-of-type(3) {
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+  left: 5rem;
+}
+
+/* line 792, ../sass/main.min.scss */
+.H_14 .year span:nth-of-type(4) {
+  -webkit-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+  left: 6.5625rem;
+}
+
+/* line 799, ../sass/main.min.scss */
+.H_14 .year {
+  -webkit-animation: bgShow 2s cubic-bezier(0.72, 0.29, 0.33, 0.95) both;
+  animation: bgShow 2s cubic-bezier(0.72, 0.29, 0.33, 0.95) both;
+  background-size: cover;
+}
+
+/* line 804, ../sass/main.min.scss */
+.H_14 .bg1 {
+  background: url(../../images/y-1.png) left top no-repeat;
+  width: 2.125rem;
+  height: 3.15625rem;
+  position: absolute;
+  left: 0.71875rem;
+  top: 1.09375rem;
+  background-size: 2.125rem 3.15625rem;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+/* line 815, ../sass/main.min.scss */
+.H_14 .bg2 {
+  background: url(../../images/y-2.png) left top no-repeat;
+  width: 2.34375rem;
+  height: 2.3125rem;
+  position: absolute;
+  left: 2.84375rem;
+  top: 1.21875rem;
+  background-size: 2.34375rem 2.3125rem;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+/* line 826, ../sass/main.min.scss */
+.H_14 .bg3 {
+  background: url(../../images/y-3.png) left top no-repeat;
+  width: 1.71875rem;
+  height: 2.46875rem;
+  position: absolute;
+  left: 5.1875rem;
+  top: 1.3125rem;
+  left: 5.03125rem;
+  background-size: 1.71875rem 2.46875rem;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+/* line 838, ../sass/main.min.scss */
+.H_14 .bg4 {
+  background: url(../../images/y-4.png) left top no-repeat;
+  width: 3.65625rem;
+  height: 3.84375rem;
+  position: absolute;
+  left: 5.96875rem;
+  top: 0.6875rem;
+  background-size: 3.65625rem 3.84375rem;
+  -webkit-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+/* line 859, ../sass/main.min.scss */
+.H_15 .main_ani_151 {
+  width: 11.0625rem;
+  height: 1.34375rem;
+  left: 4.4375rem;
+  top: 1.75rem;
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+}
+
+/* line 867, ../sass/main.min.scss */
+.H_15 .main_ani_152 {
+  width: 20rem;
+  height: 31.5rem;
+  right: 0rem;
+  top: 0rem;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+/* line 875, ../sass/main.min.scss */
+.H_15 .main_ani_153 {
+  width: 20rem;
+  height: 31.5rem;
+  right: 0rem;
+  top: 0rem;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+/* line 883, ../sass/main.min.scss */
+.H_15 .main_ani_154 {
+  width: 20rem;
+  height: 31.5rem;
+  right: 0rem;
+  top: 0rem;
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s;
+}
+
+/* line 891, ../sass/main.min.scss */
+.H_15 .main_ani_155 {
+  width: 20rem;
+  height: 31.5rem;
+  right: 0rem;
+  top: 0rem;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+
+/* line 899, ../sass/main.min.scss */
+.H_15 .main_ani_156 {
+  width: 20rem;
+  height: 31.5rem;
+  right: 0rem;
+  top: 0rem;
+}
+
+/* line 906, ../sass/main.min.scss */
+.H_15 .main_ani_157, .H_15 .main_ani_160 {
+  width: 20rem;
+  height: 31.5rem;
+  right: 0rem;
+  top: 0rem;
+}
+
+/* line 912, ../sass/main.min.scss */
+.hide {
+  display: none;
+}
+
+/* line 916, ../sass/main.min.scss */
+.H_15 .main_ani_158 {
+  width: 20rem;
+  height: 100%;
+  left: 0rem;
+  top: 0rem;
+  z-index: -1;
+}
+
+/* line 924, ../sass/main.min.scss */
+.H_15 .main_ani_159 {
+  width: 12.65625rem;
+  height: 8.34375rem;
+  left: 3.5rem;
+  top: 9.9375rem;
+}
+
+/* line 932, ../sass/main.min.scss */
+.H_15 .aniHide {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+
+/* line 936, ../sass/main.min.scss */
+.H_15 .aniShow {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+
+/* line 940, ../sass/main.min.scss */
+.H_15 .aniShow1 {
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+/* line 945, ../sass/main.min.scss */
+.H_15 .main_ani_157 {
+  /*这个div在前面*/
+  -webkit-mask-image: url(../../images/18-3.png);
+  -webkit-mask-size: 12.5rem 8.125rem;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+/*.show这个类实现mask的位置移动过渡动画*/
+/* line 952, ../sass/main.min.scss */
+.H_15 .maskshow {
+  -webkit-animation: maskShow 3s linear 5s;
+  /*实现mask移动动画，从而达到line wipe动画效果*/
+  opacity: 0;
+}
+
+/* line 956, ../sass/main.min.scss */
+.H_15 .imgbig {
+  -webkit-animation: imgbig 3s linear 5s;
+  /*实现mask移动动画，从而达到line wipe动画效果*/
+  opacity: 0;
+}
+
+/* line 962, ../sass/main.min.scss */
+.H_16 .main_ani_161 {
+  width: 20rem;
+  height: 100%;
+  left: 0rem;
+  top: 0rem;
+}
+
+/* line 968, ../sass/main.min.scss */
+.H_16 .main_ani_162, .H_16 .main_ani_166 {
+  width: 20rem;
+  height: 100%;
+  left: 0rem;
+  top: 0rem;
+}
+
+/* line 974, ../sass/main.min.scss */
+.H_16 .main_ani_163 {
+  width: 6.03125rem;
+  height: 3.375rem;
+  left: 11.375rem;
+  top: 2.1875rem;
+}
+
+/* line 980, ../sass/main.min.scss */
+.H_16 .main_ani_164 {
+  width: 3.9375rem;
+  height: 0.75rem;
+  left: 13.53125rem;
+  top: 27.5rem;
+}
+
+/* line 986, ../sass/main.min.scss */
+.H_16 .main_ani_165 {
+  width: 4.25rem;
+  height: 0.59375rem;
+  left: 13.3125rem;
+  top: 28.75rem;
+}
+
+/* line 992, ../sass/main.min.scss */
+.H_16 .main_ani_168 {
+  display: inline-block;
+  width: 10.875rem;
+  height: 4.09375rem;
+  left: 4.5625rem;
+  top: 21.875rem;
+  background: url(../../images/21-3.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+/* line 1004, ../sass/main.min.scss */
+.H_16 .aniHide {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+/* line 1008, ../sass/main.min.scss */
+.H_16 .main_ani_166 {
+  z-index: -1;
+}
+
+@-webkit-keyframes maskShow {
+  0% {
+    -webkit-mask-position: center;
+    -webkit-mask-size: 25rem 18.75rem;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    -webkit-mask-position: 0px 0px;
+    -webkit-mask-size: 12.5rem 8.125rem;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes maskShow {
+  0% {
+    -webkit-mask-position: center;
+    -webkit-mask-size: 25rem 18.75rem;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    -webkit-mask-position: 0px 0px;
+    -webkit-mask-size: 12.5rem 8.125rem;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes imgbig {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes imgbig {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 1099, ../sass/main.min.scss */
+.rollLeft16 {
+  -webkit-animation: rollLeft16 1s ease-in-out 1.8s both;
+  -moz-animation: rollLeft16 1s ease-in-out 1.8s both;
+  -o-animation: rollLeft16 1s ease-in-out 1.8s both;
+  animation: rollLeft16 1s ease-in-out 1.8s both;
+  transition: all;
+}
+
+/* line 1106, ../sass/main.min.scss */
+.fadeIndown1 {
+  -webkit-animation: fadeIndown 1s ease-in-out 1s both;
+  -moz-animation: fadeIndown 1s ease-in-out 1s both;
+  -o-animation: fadeIndown 1s ease-in-out 1s both;
+  animation: fadeIndown 1s ease-in-out 1s both;
+  transition: all;
+}
+
+/* line 1115, ../sass/main.min.scss */
+.LtoR {
+  -webkit-animation: LtoR 11s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+  -moz-animation: LtoR 11s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+  -o-animation: LtoR 11s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+  animation: LtoR 11s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite;
+  transition: all;
+}
+
+/* line 1122, ../sass/main.min.scss */
+.LtoR1 {
+  -webkit-animation: LtoR1 11s linear infinite;
+  -moz-animation: LtoR1 11s linear infinite;
+  -o-animation: LtoR1 11s linear infinite;
+  animation: LtoR1 11s linear infinite;
+  transition: all;
+}
+
+/* line 1129, ../sass/main.min.scss */
+.small {
+  -webkit-animation: small 1s cubic-bezier(0.17, 0.67, 0.83, 0.67) 1s infinite;
+  -moz-animation: small 1s cubic-bezier(0.17, 0.67, 0.83, 0.67) 1s infinite;
+  -o-animation: small 1s cubic-bezier(0.17, 0.67, 0.83, 0.67) 1s infinite;
+  animation: small 1s cubic-bezier(0.17, 0.67, 0.83, 0.67) 1s infinite;
+  transition: all;
+}
+
+/* line 1137, ../sass/main.min.scss */
+.roll {
+  -webkit-animation: roll 30s linear 1s infinite;
+  -moz-animation: roll 30s linear 1s infinite;
+  -o-animation: roll 30s linear 1s infinite;
+  animation: roll 30s linear 1s infinite;
+  transition: all;
+}
+
+/* line 1146, ../sass/main.min.scss */
+.toSmall {
+  -webkit-animation: toSmall 0.5s cubic-bezier(0.13, 0.65, 0.39, 1.43) both;
+  -moz-animation: toSmall 0.5s cubic-bezier(0.13, 0.65, 0.39, 1.43) both;
+  -o-animation: toSmall 0.5s cubic-bezier(0.13, 0.65, 0.39, 1.43) both;
+  animation: toSmall 0.5s cubic-bezier(0.13, 0.65, 0.39, 1.43) both;
+}
+
+/* line 1155, ../sass/main.min.scss */
+.toSmall1 {
+  -webkit-animation: toSmall1 1s cubic-bezier(0.19, 0.31, 0.58, 0.95) both;
+  -moz-animation: toSmall1 1s cubic-bezier(0.19, 0.31, 0.58, 0.95) both;
+  -o-animation: toSmall1 1s cubic-bezier(0.19, 0.31, 0.58, 0.95) both;
+  animation: toSmall1 1s cubic-bezier(0.19, 0.31, 0.58, 0.95) both;
+}
+
+/* line 1163, ../sass/main.min.scss */
+.aniHide {
+  -webkit-animation: tohide 0.5s ease both;
+  -moz-animation: tohide 0.5s ease both;
+  -o-animation: tohide 0.5s ease both;
+  animation: tohide 0.5s ease both;
+}
+
+/* line 1170, ../sass/main.min.scss */
+.aniShow {
+  -webkit-animation: toShow 0.5s ease both;
+  -moz-animation: toShow 0.5s ease both;
+  -o-animation: toShow 0.5s ease both;
+  animation: toShow 0.5s ease both;
+}
+
+/* line 1177, ../sass/main.min.scss */
+.aniShow1 {
+  -webkit-animation: toShow1 0.5s ease both;
+  -moz-animation: toShow1 0.5s ease both;
+  -o-animation: toShow1 0.5s ease both;
+  animation: toShow1 0.5s ease both;
+  transition: all;
+}
+
+/* line 1184, ../sass/main.min.scss */
+.fadeIn1 {
+  -webkit-animation: fadeIn1 1s ease 7s both;
+  -moz-animation: fadeIn1 1s ease 7s both;
+  -o-animation: fadeIn1 1s ease 7s both;
+  animation: fadeIn1 1s ease 7s both;
+  transition: all;
+}
+
+@-webkit-keyframes rollLeft16 {
+  from {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    -webkit-transform: rotate(-20deg) scale(0.8);
+    transform: rotate(-20deg) scale(0.8);
+  }
+}
+@keyframes rollLeft16 {
+  from {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    top: 0;
+  }
+  to {
+    -webkit-transform: rotate(-20deg) scale(0.8);
+    transform: rotate(-20deg) scale(0.8);
+    top: -4rem;
+  }
+}
+@-webkit-keyframes fadeIndown {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 1.6rem;
+  }
+}
+@-webkit-keyframes roll {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes LtoR {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -4.125rem;
+  }
+  100% {
+    left: 0rem;
+  }
+}
+@-webkit-keyframes LtoR1 {
+  0% {
+    left: 0.90625rem;
+  }
+  50% {
+    left: -17.8125rem;
+  }
+  100% {
+    left: 0.90625rem;
+  }
+}
+@-webkit-keyframes small {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes niceIn {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@-moz-keyframes niceIn {
+  50% {
+    -moz-transform: scale(1.5);
+  }
+  70% {
+    -o-transform: scale(0.8);
+  }
+  0%,100% {
+    -moz-transform: scale(1);
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  70% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes niceIn {
+  0%,100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  70% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@-o-keyframes niceIn {
+  0%,100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  70% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@keyframes niceIn {
+  0%,100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  70% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes smoky {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(15rem, -2rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    transform: translate3d(15rem, -2rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 50px whitesmoke;
+  }
+  to {
+    text-shadow: 0 0 10px whitesmoke;
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes smoky {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(15rem, -2rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    transform: translate3d(15rem, -2rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 50px whitesmoke;
+  }
+  to {
+    text-shadow: 0 0 10px #c57814;
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes smoky-mirror {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(18rem, -2rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    transform: translate3d(18rem, -2rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 50px #c57814;
+  }
+  to {
+    text-shadow: 0 0 10px #c57814;
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes smoky-mirror {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(18rem, -2rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    transform: translate3d(18rem, -2rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 50px #c57814;
+  }
+  to {
+    text-shadow: 0 0 10px #c57814;
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes smoky-mirror {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(18rem, -2rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    transform: translate3d(18rem, -2rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 50px #c57814;
+  }
+  to {
+    text-shadow: 0 0 10px #c57814;
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes smoky-mirror {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(18rem, -2rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    transform: translate3d(18rem, -2rem, 0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 50px #c57814;
+  }
+  to {
+    text-shadow: 0 0 10px #c57814;
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes bgShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bgShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes toSmall {
+  from {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes toSmall {
+  from {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes toSmall1 {
+  from {
+    -webkit-transform: scale(4);
+    transform: scale(4);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes toSmall1 {
+  from {
+    -webkit-transform: scale(4);
+    transform: scale(4);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes tohide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes tohide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes toShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes toShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes toShow1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes toShow1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 1667, ../sass/main.min.scss */
+.animation1 {
+  -webkit-animation: fadeInUp 1s .2s ease both;
+  -moz-animation: fadeInUp 1s .2s ease both;
+  animation: fadeInUp 1s .2s ease both;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+/* line 1674, ../sass/main.min.scss */
+.animation2 {
+  -webkit-animation: fadeInUp 1s .2s ease both;
+  -moz-animation: fadeInUp 1s .2s ease both;
+  animation: fadeInUp 1s .2s ease both;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+/* line 1681, ../sass/main.min.scss */
+.animation3 {
+  -webkit-animation: fadeInUp 1s .2s ease both;
+  -moz-animation: fadeInUp 1s .2s ease both;
+  animation: fadeInUp 1s .2s ease both;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+/* line 1688, ../sass/main.min.scss */
+.animation4 {
+  -webkit-animation: fadeInUp 1s .2s ease both;
+  -moz-animation: fadeInUp 1s .2s ease both;
+  animation: fadeInUp 1s .2s ease both;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+/* line 1727, ../sass/main.min.scss */
+#music {
+  position: absolute;
+  z-index: 999;
+  width: 2.3125rem;
+  height: 2.3125rem;
+  top: 0;
+  right: 0;
+}
+
+/* line 1735, ../sass/main.min.scss */
+#musicPlay {
+  position: absolute;
+  z-index: 999;
+  -webkit-animation: minhand 3s linear infinite;
+  width: 2.3125rem;
+  height: 2.3125rem;
+}
+
+/* line 1742, ../sass/main.min.scss */
+#musicPause {
+  position: absolute;
+  z-index: 999;
+  width: 2.3125rem;
+  height: 2.3125rem;
+  display: none;
+}
+
+@-webkit-keyframes minhand {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes minhand {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes minhand {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

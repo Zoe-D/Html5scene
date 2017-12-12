@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+
+	</script>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="videoBox">
+	
+    <!--<input id="playBtn" type="button" value="">-->
+
+    <video id="videoLive" preload="auto" poster=""  x5-video-player-type="h5" x5-video-player-fullscreen="true" webkit-playsinline="true" x-webkit-airplay="true" playsinline="true">
+
+        <source src="myvideo.mp4">
+    </video>
+</div>
+<div id="playBtn">
+	<div id="re">
+		<img src="images/ta.png" alt="" class="dw" id="dw"/>
+		<img src="images/tg.png" alt="" class="tg"/>
+		<img src="images/line.png" alt="" class="line"/>
+		<img src="images/people.png" alt="" class="people"/>
+		<img src="images/scbg.png" alt="" class="scbg"/>
+		<img src="images/yln.png" alt="" class="yln"/>
+		<img src="images/szyd.png" alt="" class="szyd"/>
+		<img src="images/qbj.png" alt="" class="qbj"/>
+	</div>
+	<audio style="display:none; height: 0" id="bg-music" preload="auto" src="a.mp3" loop="loop"></audio>
+</div>
+
+<script src="js/iscroll.js"></script>
+<script>
+	//    basic
+    var html =document.documentElement;
+    html.style.fontSize = html.clientWidth / 20+'px';
+    document.addEventListener('touchstart',function(ev){ev.preventDefault});
+    
+    var iWindowWidth;
+    var iWindowHeight;
+    window.onresize = function () {
+//      autoWH();
+//      myPlayer.style.width = iWindowWidth + "px";
+//      myPlayer.style.height = iWindowHeight + "px";
+    }
+    //获取videojs生成的video
+    var myPlayer = document.getElementById("videoLive");
+    //播放按钮
+    var oPlayBtn = document.getElementById("playBtn");
+    //获取视频盒子
+    var oVideoBox = document.getElementById("videoBox");
+    var oRe = document.getElementById("re");
+  
+
+    //图片加载完
+//  oPoster.onload = function () {
+//      oVideoBox.style.height = oPoster.offsetHeight + "px";
+//  }
+
+    window.addEventListener('touchmove', function (e) {
+     e.preventDefault();
+     }, false);
+     oPlayBtn.style.height = screen.height+'px'
+     oRe.style.height = screen.height+'px'
+//  function autoWH() {
+//      //获取可视区宽度
+//      iWindowWidth = window.innerWidth;
+//      //获取可视区高度
+//      iWindowHeight = screen.height+'px';
+//     
+//  }
+//  autoWH();
+
+    //播放按钮呗点击
+    oPlayBtn.onclick = function () {
+        myPlayer.play();
+        this.style.display  = "none";
+       
+    }
+
+    //监听播放
+    myPlayer.addEventListener('play', function () {
+        //alert("播放");
+
+    }, false);
+    //监听暂停
+//  myPlayer.addEventListener('pause', function () {
+//      alert("暂停");
+//  }, false);
+    //监听结束
+//  myPlayer.addEventListener('ended', function () {
+//      alert("结束");
+//  }, false);
+		// 音乐播放
+//		  oPlayBtn.addEventListener('touchstart',pauseMusic);
+
+//		 
+
+	//原来是在微信易信执行Ready之前，先注册事件，所以放在所有请求的最前面
+//	document.addEventListener("WeixinJSBridgeReady", function () {
+//	    audioAutoPlay('Jaudio');//给个全局函数
+//	}, false);
+//	document.addEventListener('YixinJSBridgeReady', function() {
+//	    audioAutoPlay('Jaudio');//给个全局函数
+//	}, false);
+	
+	function autoPlayMusic() {
+	    // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+	    function musicInBrowserHandler() {
+	        musicPlay(true);
+	        document.body.removeEventListener('touchstart', musicInBrowserHandler);
+	    }
+	    document.body.addEventListener('touchstart', musicInBrowserHandler);
+	
+	    // 自动播放音乐效果，解决微信自动播放问题
+	    function musicInWeixinHandler() {
+	        musicPlay(true);
+	        document.addEventListener("WeixinJSBridgeReady", function () {
+	            musicPlay(true);
+	        }, false);
+	        document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+	    }
+	    document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+	}
+//	function pauseMusic() {
+//	    // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+//	    function musicInBrowserHandler() {
+//	        musicPlay(false);
+//	        document.body.removeEventListener('touchstart', musicInBrowserHandler);
+//	    }
+//	    document.body.addEventListener('touchstart', musicInBrowserHandler);
+//	
+//	    // 自动播放音乐效果，解决微信自动播放问题
+//	    function musicInWeixinHandler() {
+//	        musicPlay(false);
+//	        document.addEventListener("WeixinJSBridgeReady", function () {
+//	            musicPlay(false);
+//	        }, true);
+//	        document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+//	    }
+//	    document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+//	}
+	function musicPlay(isPlay) {
+	    var media = document.querySelector('#bg-music');
+	    if (isPlay && media.paused) {
+	        media.play();
+	    }
+	    if (!isPlay && !media.paused) {
+	        media.pause();
+	        console.log(11)
+	    }
+	}	
+	autoPlayMusic() ;
+
+//判断是不是微信
+var isWeixin = (/MicroMessenger/ig).test(navigator.userAgent);
+var isQQ = (/qq/ig).test(navigator.userAgent);
+ if(!isWeixin && !isQQ){
+}else
+{}
+</script>
+<script src="js/TweenMax.min.js"></script>
+<script>
+	var t = new TimelineMax();
+	t.set(".scbg",{transformPerspective:300,transformOrigin:"left"})
+			
+			t.fromTo("#dw",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+			})
+			.fromTo(".line",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+//				ease:Elastic.easeInOut,
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,
+				delay:'-0.5s',
+				
+			})
+			.fromTo(".scbg",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+//				ease:Elastic.easeInOut,
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,
+				delay:'-0.5s',
+				
+			})
+			.fromTo(".yln",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+//				ease:Elastic.easeInOut,
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,
+				
+			})
+			.fromTo(".szyd",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+//				ease:Elastic.easeInOut,
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,			
+			},'-=0.8')
+			.fromTo(".qbj",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+//				ease:Elastic.easeInOut,
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				ease:Elastic.easeInOut,
+				
+			},'-=0.8')
+			.fromTo(".people",0.8,
+			{
+				x:'-20px',
+				autoAlpha:0,
+				y:'-20px',
+				scale:0.2,
+//				ease:Elastic.easeInOut,
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				scale:1,
+				ease:Power0.easeNone,
+				
+			})
+			.fromTo(".tg",1.2,
+			{	
+				scale:1,
+				 repeat: 100,
+//				ease:Elastic.easeInOut,
+			},{
+				x : '1.3125rem',
+				autoAlpha:1,
+				y:'4.9375rem',
+				scale:1,
+				repeat: 100,
+			})
+</script>
+<script type="text/javascript" src="http://pic.dailyqd.com/uploadfiles/jnlogin/jnshare/jnclientshare.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+
+var curUrl=window.location.href;
+var sign="";
+var time="";
+ $.ajax({
+ type: 'get',
+ url: 'http://tool.dailyqd.com/maker/mobilesharejninterface.aspx',
+ data:
+ {
+ 'url': curUrl
+ },
+ dataType: 'jsonp',
+ jsonp: "callback",
+ jsonpCallback: "qdrbjnshare",
+ success: function (data) {
+ 	 wx.config({
+ debug: false, 
+ appId: "wxab5dbb4806762bfc", 
+ timestamp: data.time, 
+ nonceStr: data.noncstr, 
+ signature: data.sign,
+ jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone'] // 功能列表，我们要使用JS-SDK的什么功能
+
+}); 
+ },
+ error: function (XMLHttpRequest, textStatus, errorThrown) {
+ }
+ })
+	
+
+wx.error(function(res){
+});
+ wx.ready(function(){
+ // 获取“分享给朋友”按钮点击状态及自定义分享内容接口
+wx.onMenuShareAppMessage({
+ title: '青岛市2017年最美教师评选', // 分享标题
+ desc: '', // 分享描述
+ 
+ link: document.URL, // 分享链接
+ imgUrl: 'http://www.dailyqd.com/test/bg.jpg', // 分享图标
+ type: '', // 分享类型,music、video或link，不填默认为link
+ dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+		 
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+		
+ }
+});
+wx.onMenuShareTimeline({
+ title: ' 青岛市2017年最美教师评选 ', // 分享标题
+ link: document.URL, // 分享链接
+ imgUrl: 'http://www.dailyqd.com/test/bg.jpg', // 分享图标
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+ 	 
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+ 	
+ }
+});
+wx.onMenuShareQQ({
+ title: '青岛市2017年最美教师评选 ', // 分享标题
+ desc: '',
+ link: document.URL, // 分享链接
+ imgUrl: 'http://www.dailyqd.com/test/bg.jpg', // 分享图标
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+ 	
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+ 	
+ }
+});
+wx.onMenuShareWeibo({
+	 title: ' 青岛市2017年最美教师评选 ', // 分享标题
+ desc: '',
+ link: document.URL, // 分享链接
+ imgUrl: 'http://www.dailyqd.com/test/bg.jpg', // 分享图标
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+ 	 
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+ 	
+ }
+});
+wx.onMenuShareQZone({
+	 title: ' 青岛市2017年最美教师评选 ', // 分享标题
+ desc:'',
+ link: document.URL, // 分享链接
+ imgUrl: 'http://www.dailyqd.com/test/bg.jpg', // 分享图标
+ success: function () { 
+ // 用户确认分享后执行的回调函数
+ 	 
+ },
+ cancel: function () { 
+ // 用户取消分享后执行的回调函数
+ 	
+ }
+});
+}); 
+
+
+//$(document).attr('title','<s:property value="tdailyManuscript.subtitle" escape="false" />');
+//document.title='<s:property value="tdailyManuscript.subtitle" escape="false" />';
+</script>
+
+</body>
+</html>

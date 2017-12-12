@@ -1,0 +1,43 @@
+body,
+body * {
+  -webkit-text-size-adjust: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: Helvetica;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+strong {
+  font-weight: normal;
+}
+a,
+input[type=button],
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+}
+input {
+  border-radius: 0.3125rem;
+}
+a {
+  text-decoration: none;
+}
+.page2 {
+  width: 20rem;
+  height: 32.5rem;
+}
+.page2 .video {
+  width: 20rem;
+  height: 32.5rem;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
